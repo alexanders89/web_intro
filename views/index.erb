@@ -1,23 +1,19 @@
 <html>
-<head>
-  <title>Puss....In Boots</title>
-  <link rel="stylesheet" type="tect/css" href="style.css">
-</head>
+  <head>
+    <title>Puss....In Boots</title>
+    <link rel="stylesheet" type="tect/css" href="style.css">
+  </head>
 
-<% if @name  %>
-<h1>My name is <%= @name %></h1>
-<% end %>
+  <% if @name  %>
+  <h1>My name is <%= @name %></h1>
+  <% end %>
 
+  <form action="/named-cat" method="post">
+    <input type="text" name="name">
+    <input type="submit" value="Submit">
+  </form>
 
-<form action="/named-cat">
-<input type="text" name="name">
- <input type="submit" value="Submit">
-</form>
-
-
-<body>
- 	<div style='border: 3px dashed red'>
+  <body>
     <img class="bordered" src="https://vignette3.wikia.nocookie.net/shrek/images/3/39/Puss-in-boots.png/revision/latest?cb=20110317184950">
-</body>
-
+  </body>
 <html>
