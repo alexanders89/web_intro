@@ -14,11 +14,11 @@ get '/secret' do
   "This is our secret message!"
 end
 
-# get '/named-cat' do
-#   p params
-#   @name = params[:name]
-#   erb :index
-# end
+get '/named-cat' do
+  p params
+  @name = params[:name]
+  erb :index
+end
 
 post '/named-cat' do
   p params
